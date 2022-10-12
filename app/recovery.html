@@ -1,0 +1,42 @@
+<!--#set var="title" value="Восстановление пароля" -->
+<!--#include virtual="/parts/header.html" -->
+<style>
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    #recovery-page-wrapper{
+        background: url('images/dist/recovery_bg.jpg') center center no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        height: auto
+    }
+    #recovery-page-wrapper form{
+        width: 560px;
+        background: #fff;
+        border-radius: 0.5rem;
+    }
+    .bi-key{
+        font-size: 92px;
+        line-height: 92px;
+    }
+</style>
+<div id="recovery-page-wrapper" class="page-wrapper d-flex align-items-center justify-content-center">
+    <form class="p-4 text-center">
+
+        <i class="bi bi-key"></i>
+        <h3>Восстановление пароля</h3>
+
+        <div class="form-floating mt-4 mb-3">
+            <input type="password" class="form-control" id="recovery-password" placeholder="Новый пароль">
+            <label for="recovery-password">Новый пароль</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="recovery-password-repeat" placeholder="Повторите новый пароль">
+            <label for="recovery-password-repeat">Повторите новый пароль</label>
+        </div>
+        <button class="btn btn-primary btn-lg w-100" type="submit">Восстановить</button>
+    </form>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

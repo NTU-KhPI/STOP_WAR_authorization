@@ -29,14 +29,14 @@
 		</a>
 
 		<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-			<li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
-			<li><a href="recovery.html" class="nav-link px-2 link-dark">Recovery</a></li>
-			<li><a href="terms.html" class="nav-link px-2 link-dark">Terms</a></li>
+			<li><a href="/" class="nav-link px-2 link-secondary">Головна</a></li>
+			<li><a href="recovery.html" class="nav-link px-2 link-dark">Відновлення</a></li>
+			<li><a href="terms.html" class="nav-link px-2 link-dark">Умови</a></li>
 		</ul>
 
 		<div class="col-md-3 text-end">
-			<button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signin">Login</button>
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign-up</button>
+			<button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signin">Логін</button>
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Зареєструватися</button>
 		</div>
 	</div>
 </header>
@@ -47,21 +47,21 @@
 			<div class="modal-body text-center pt-4 px-3">
 				<form>
 					<i class="bi bi-person" style="font-size: 92px; line-height: 92px;"></i>
-					<h3>Вход</h3>
+					<h3>Вхід</h3>
 					<div class="form-floating mt-4 mb-3">
 						<input type="email" class="form-control" id="signin-email" placeholder="Email">
-						<label for="signin-email">Email</label>
+						<label for="signin-email">Пошта</label>
 					</div>
 					<div class="form-floating mb-3">
 						<input type="password" class="form-control" id="signin-password" placeholder="Пароль">
 						<label for="signin-password">Пароль</label>
 					</div>
-					<p class="mb-0">Забыли пароль? <a href="#recovery" data-bs-toggle="modal" data-bs-target="#recovery">Восстановить</a></p>
+					<p class="mb-0">Забули пароль? <a href="#recovery" data-bs-toggle="modal" data-bs-target="#recovery">Відновити</a></p>
 				</form>
 			</div>
 			<div class="modal-footer justify-content-between">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
-				<button type="button" class="btn btn-primary">Войти</button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Скасувати</button>
+				<button type="button" class="btn btn-primary">Увійти</button>
 			</div>
 		</div>
 	</div>
@@ -73,18 +73,18 @@
 			<div class="modal-body pt-4 px-3 text-center">
 				<form>
 					<i class="bi bi-key" style="font-size: 92px; line-height: 92px;"></i>
-					<h3>Восстановление пароля</h3>
-					<p>Введите email на который зарегистрирован ваш аккаунт.
-						Вам на почту придет письмо с ссылкой на восстановление пароля.</p>
+					<h3>Відновлення пароля</h3>
+					<p>Введіть пошту на яку зареєстровано ваш обліковий запис.
+						Вам на пошту прийде лист із посиланням на відновлення паролю.</p>
 					<div class="form-floating">
 						<input type="email" class="form-control" id="recovery-email" placeholder="Email">
-						<label for="recovery-email">Email</label>
+						<label for="recovery-email">Пошта</label>
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer justify-content-between">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
-				<button type="button" class="btn btn-primary">Отправить</button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Скасувати</button>
+				<button type="button" class="btn btn-primary">Відправити</button>
 			</div>
 		</div>
 	</div>
@@ -94,21 +94,21 @@
 	<div class="modal-dialog modal-lg modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Регистрация</h5>
+				<h5 class="modal-title">Реєстрація</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
 				<form class="row g-3">
 					<div class="col-md-4">
 						<div class="form-floating is-valid">
-							<input type="text" class="form-control is-valid" id="signup-first-name" placeholder="Имя" value="Кирилл">
-							<label for="signup-first-name">Имя</label>
+							<input type="text" class="form-control is-valid" id="signup-first-name" placeholder="Ім'я">
+							<label for="signup-first-name">Ім'я</label>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="form-floating is-valid">
-							<input type="text" class="form-control is-valid" id="signup-last-name" placeholder="Фамилия" value="Николаенко">
-							<label for="signup-last-name">Фамилия</label>
+							<input type="text" class="form-control is-valid" id="signup-last-name" placeholder="Прізвище">
+							<label for="signup-last-name">Прізвище</label>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -116,14 +116,14 @@
 							<span class="input-group-text">@</span>
 							<div class="form-floating">
 								<input type="text" class="form-control" id="signup-username" placeholder="Username" required>
-								<label for="signup-username">Ник</label>
+								<label for="signup-username">Нік</label>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-floating is-valid">
-							<input type="email" class="form-control is-valid" id="signup-email" placeholder="Email" value="mail@mail.ru">
-							<label for="signup-email">Email</label>
+							<input type="email" class="form-control is-valid" id="signup-email" placeholder="Пошта">
+							<label for="signup-email">Пошта</label>
 						</div>
 					</div>
 					<div class="col-md-3">
@@ -134,20 +134,20 @@
 					</div>
 					<div class="col-md-3">
 						<div class="form-floating is-valid">
-							<input type="password" class="form-control" id="signup-password-repeat" placeholder="Повторите пароль">
-							<label for="signup-password-repeat">Повторите пароль</label>
+							<input type="password" class="form-control" id="signup-password-repeat" placeholder="Повторіть пароль">
+							<label for="signup-password-repeat">Повторіть пароль</label>
 						</div>
 					</div>
 					<div class="col-12">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="signup-terms" required>
 							<label class="form-check-label" for="signup-terms">
-								Я принимаю <a href="/terms.html">условия пользования сайтом</a>
+								Я приймаю <a href="/terms.html">умови користування сайтом</a>
 							</label>
 						</div>
 					</div>
 					<div class="col-12">
-						<button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+						<button class="btn btn-primary" type="submit">Зареєструватися</button>
 					</div>
 				</form>
 			</div>
